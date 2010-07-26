@@ -1,18 +1,11 @@
-Welcome to your Appcelerator Titanium Mobile Project
+This is a sample mobile(iPhone/Android) app based on Titanium from idapted.com. We are preparing for the final release of this application.
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
+We are experimenting the Titanium Mobile framework, it's amazing and very easy to use. Now our expert(Seven) is implementing the voice(VoIP) module for Titanium(http://www.appcelerator.com). At the same time we are working on another Mobile Project named mLearning.
 
+Fork the app if you are interested in it.
 
+Prototype: Seven Du(http://www.dujinfang.com)
+App Author: Andy Wang(http://tech.wangyaodi.com)
+UI Designer: Buzz Li(http://www.lijiapeng.com)
 
-----------------------------------
-Stuff our legal folk make us say:
-
-Appcelerator, Appcelerator Titanium and associated marks and logos are 
-trademarks of Appcelerator, Inc. 
-
-Titanium is Copyright (c) 2009-2010 by Appcelerator, Inc. All Rights Reserved.
-
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
-
+Enjoy it.

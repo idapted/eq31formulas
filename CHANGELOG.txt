@@ -1,1 +1,7 @@
-Place your change log text here.  This file will be incorporated with your app at package time.
+v0.8(2010/07/16)
+	1. init the 31formulas functions.
+	2. sync DB from server to fetch updates.
+	3. Play mp4 and sound.
+	4. integrate sina weibo stream.
+	5. first version of multi-language support.
+  

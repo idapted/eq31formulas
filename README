@@ -1,11 +1,21 @@
+<h5>Description</h5>
+
 This is a sample mobile(iPhone/Android) app based on Titanium from idapted.com. We are preparing for the final release of this application.
 
 We are experimenting the Titanium Mobile framework, it's amazing and very easy to use. Now our expert(Seven) is implementing the voice(VoIP) module for Titanium(http://www.appcelerator.com). At the same time we are working on another Mobile Project named mLearning.
+
+<h5>How to run it?</h5>
+
+This needs a db server where the app will update 31formulas. but you can still comment out the "synchronize.js", we will update this app as a standalone app without updating data from server.
+
+Then I ignore the sound file and animation file as it's too big to commit it here. so just add any thing in side the sound and animation folder.
 
 Fork the app if you are interested in it.
 
 Prototype: Seven Du(http://www.dujinfang.com)
 App Author: Andy Wang(http://tech.wangyaodi.com)
 UI Designer: Buzz Li(http://www.lijiapeng.com)
+
+Subscribe Idapted Tech Blog for more updates: http://developer.idapted.com
 
 Enjoy it.

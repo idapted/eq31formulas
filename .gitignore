@@ -1,3 +1,4 @@
-build/*
-Resources/animation/*
-Resources/sound/*
+build/**
+Resources/animation/**
+Resources/sound/**
+Resources/.svn/*

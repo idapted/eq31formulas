@@ -1,0 +1,31 @@
+html {
+	margin:0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica;
+	font-size: 14px;
+	margin: 0;
+	padding: 10px;
+	line-height: 20px;
+	background: url(../images/formula_bg.png) no-repeat left top;
+}
+
+h3 {
+	font-size:16px;
+	text-align: center;
+	color: #385292;
+	text-shadow: 0 1px #fff;
+	line-height: 24px;
+	height: 24px;
+	margin-bottom: 26px;
+}
+
+p {
+
+}
+
+li {
+
+}

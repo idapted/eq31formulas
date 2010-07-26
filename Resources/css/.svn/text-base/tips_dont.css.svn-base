@@ -1,0 +1,37 @@
+html {
+	margin:0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica;
+	font-size: 14px;
+	margin: 0;
+	padding: 0px;
+	line-height: 20px;
+}
+
+h3 {
+	font-size:22px;
+	line-height: 1.6em;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 1px #000;
+	margin: 10px auto 0px;
+/* 	font-family: "American Typewriter"; */
+	font-family: "Marker Felt";
+	background: url(../images/tips_h3_bg.png) no-repeat left top;
+	width: 260px;
+	height: 125px;
+	padding: 20px;
+	vertical-align: middle;
+}
+
+p {
+	padding: 8px;
+	border: 1px solid #F5BC4B;
+	background-color: #FFE18E;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	margin: 10px;
+}

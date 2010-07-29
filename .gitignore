@@ -2,3 +2,9 @@ build/**
 Resources/animation/**
 Resources/sound/**
 Resources/.svn/*
+Resources/.svn/*
+Resources/content/.svn/*
+Resources/css/.svn/*
+Resources/images/.svn/*
+Resources/iphone/.svn/*
+Resources/l10n/.svn/*

@@ -32,7 +32,7 @@
 		shadowOffset:{x:0,y:1},
 		height:50,
 		width:320,
-		bottom:100,
+		bottom:100
 	});
 
 	welcomeWindow.add(start);

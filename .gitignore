@@ -1,9 +1,10 @@
 build/**
 Resources/animation/**
-./svn/**
+.svn/**
 Resources/sound/**
 Resources/.svn/**
-Resources/.svn/**
+Resources/android/.svn/**
+Resources/lang/.svn/**
 Resources/content/.svn/**
 Resources/css/.svn/**
 Resources/images/.svn/**

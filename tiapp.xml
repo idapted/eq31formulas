@@ -3,11 +3,11 @@
 <id>com.idapted.eq31formulas</id>
 <name>EQ31Formulas</name>
 <version>1.0</version>
-<publisher>not specified</publisher>
+<publisher>AndyWang</publisher>
 <url>not specified</url>
 <description>not specified</description>
-<copyright>not specified</copyright>
-<icon>default_app_logo.png</icon>
+<copyright>idapted.com</copyright>
+<icon>appicon.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
     <statusbar-style>default</statusbar-style>

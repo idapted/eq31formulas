@@ -1,10 +1,10 @@
-<h5>Description</h5>
+Description
 
 This is a sample mobile(iPhone/Android) app based on Titanium from idapted.com. We are preparing for the final release of this application.
 
 We are experimenting the Titanium Mobile framework, it's amazing and very easy to use. Now our expert(Seven) is implementing the voice(VoIP) module for Titanium(http://www.appcelerator.com). At the same time we are working on another Mobile Project named mLearning.
 
-<h5>How to run it?</h5>
+How to run it?
 
 This needs a db server where the app will update 31formulas. but you can still comment out the "synchronize.js", we will update this app as a standalone app without updating data from server.
 

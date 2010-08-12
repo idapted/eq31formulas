@@ -137,31 +137,31 @@ L10NObject.prototype.showLanguageSelectionDialog = function () {
     });
   }
 
-  row = Ti.UI.createTableViewRow();
-  var url = Ti.App.Properties.getString(this_l10n.LangUrlPreferenceName); // load url from preferences
-  if (!url) { url = 'http://mydomain/ru.txt'; }
-  var tf1 = Ti.UI.createTextField({
-    height: 35,
-    left: 10,
-    width: 280,
-    value: url,
-    autocorrect: false,
-    autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
-    keyboardType: Ti.UI.KEYBOARD_URL,
-    returnKeyType: Ti.UI.RETURNKEY_DONE,
-    borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE
-  });	
-  row.add(tf1);
-  row.selectionStyle = Ti.UI.iPhone.TableViewCellSelectionStyle.NONE;
-  row.className = 'control';
-  row.header = 'Testing localizations:';
-  data.push(row);
-
-  data.push({
-    title:'Load override for "' + this_l10n.LoadedLanguage + '" locale',
-    action: ACTION_LOAD/*,
-    header: 'Testing localizations:'*/
-  });
+  // row = Ti.UI.createTableViewRow();
+  // var url = Ti.App.Properties.getString(this_l10n.LangUrlPreferenceName); // load url from preferences
+  // if (!url) { url = 'http://mydomain/ru.txt'; }
+  // var tf1 = Ti.UI.createTextField({
+  //   height: 35,
+  //   left: 10,
+  //   width: 280,
+  //   value: url,
+  //   autocorrect: false,
+  //   autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+  //   keyboardType: Ti.UI.KEYBOARD_URL,
+  //   returnKeyType: Ti.UI.RETURNKEY_DONE,
+  //   borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE
+  // });	
+  // row.add(tf1);
+  // row.selectionStyle = Ti.UI.iPhone.TableViewCellSelectionStyle.NONE;
+  // row.className = 'control';
+  // row.header = 'Testing localizations:';
+  // data.push(row);
+  // 
+  // data.push({
+  //   title:'Load override for "' + this_l10n.LoadedLanguage + '" locale',
+  //   action: ACTION_LOAD/*,
+  //   header: 'Testing localizations:'*/
+  // });
 
   i = 0; for (var key in this_l10n.LanguageOverrideFiles) { if (true) { i++; } }
   if (i > 0) {

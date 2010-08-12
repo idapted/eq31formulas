@@ -4,5 +4,8 @@ tab_tips=小技巧
 tab_weibo=微博
 tab_others=其它資料
 tab_settings=設置
-eq_31_formulas=EQ31种高分公式
-tips=EQ Tips=EQ语言技巧
+eq_31_formulas=EQ31種高分公式
+tips=EQ语言技巧
+language=語言
+intro=簡介
+formula=公式 

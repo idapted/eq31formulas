@@ -6,3 +6,6 @@ tab_others=Others
 tab_settings=SETTING
 eq_31_formulas=EQ 31 Formulas
 tips=EQ Tips
+language=Language
+intro=Introduction
+formula=Formula 

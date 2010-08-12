@@ -54,13 +54,6 @@
 		},3000);
 	});
 	
-	// start.addEventListener('click', function()
-	// 	{
-	// 		// Titanium.UI.createAlertDialog({title:'Image View', message:'You clicked me!'}).show();
-	// 		welcomeWindow.close({
-	// 			transition:Titanium.UI.iPhone.AnimationStyle.CURL_UP
-	// 		});
-	// 	});
 	welcomeWindow.addEventListener('click', function()
 	{
 		// Titanium.UI.createAlertDialog({title:'Image View', message:'You clicked me!'}).show();
@@ -68,5 +61,6 @@
 			transition:Titanium.UI.iPhone.AnimationStyle.CURL_UP
 		});
 	});
+	
 })();
 

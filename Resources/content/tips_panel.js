@@ -11,7 +11,7 @@ win.barColor = '#385292';
 // NAVBAR
 // 
 var intro = Titanium.UI.createButtonBar({
-	labels:['intro'],
+	labels:[_('intro')],
 	backgroundColor:'#336699'
 });
 
@@ -95,9 +95,18 @@ tableView.addEventListener('click', function(e)
 	// use rowNum property on object to get row number
 	if (e.rowData.url && (e.source.clickName == 'button'))
 	{
+		var _title;
+		if (e.rowData.type == 'do') {
+			_title = "DO's";
+		}
+		else {
+			_title = "DON'Ts";
+		};
 		var win = Titanium.UI.createWindow({
 			url:e.rowData.url,
-			titleImage:'../images/nav_icon_tips.png',
+			// titleImage:'../images/nav_icon_tips.png',
+			// title:_('tips'),
+			title: _title,
 			subject: e.rowData.title,
 			type: e.rowData.type
 		});

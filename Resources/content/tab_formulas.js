@@ -1,6 +1,6 @@
 var win_formulas = Titanium.UI.createWindow({ 
     title:_('eq_31_formulas'),
-	titleImage:'images/nav_icon_31f.png',
+	// titleImage:'images/nav_icon_31f.png',
 	barColor:'#385292', 
 	//navBarHidden:true,
     backgroundColor:'#fff',

@@ -1,18 +1,22 @@
+Ti.include('../l10n/l10n.js');
+Ti.include('../l10n/l10n_dialog.js');
+Ti.include('../l10n/l10n_format.js');
+
+var win = Titanium.UI.currentWindow;
+win.barColor = '#385292';
+
 // var db = Titanium.Database.install('../eq31formulas.db', 'eq31formulas');
 var db = Titanium.Database.open('eq31formulas');
 
 var rows = db.execute('SELECT * FROM lessons');
 
-Titanium.API.info('ROW COUNT = ' + rows.getRowCount());
-
-var win = Titanium.UI.currentWindow;
-win.barColor = '#385292';
+Titanium.API.info('==========ROW COUNT  = ' + rows.getRowCount());
 
 //
 // NAVBAR
 // 
 var intro = Titanium.UI.createButtonBar({
-	labels:['intro'],
+	labels:[_('intro')],
 	backgroundColor:'#336699'
 });
 
@@ -79,6 +83,7 @@ for (var c=0;c<rows.rowCount;c++)
 	row.className = 'datarow';
 	row.filter = rows.field(1);
 	row.clickName = 'row';
+	row.f_index = (c+1);
 
 	var photo = Ti.UI.createView({
 		backgroundImage:'../images/row_formula.png',
@@ -140,6 +145,7 @@ for (var c=0;c<rows.rowCount;c++)
     rows.next();
 }
 
+rows.close();
 
 //
 // create table view (
@@ -161,8 +167,8 @@ tableView.addEventListener('click', function(e)
 	{
 		var win = Titanium.UI.createWindow({
 			url:e.rowData.url,
-			// title: "Formula " + e.rowData.id,
-			titleImage:'images/nav_icon_31f.png',
+			title: _("formula") + e.rowData.f_index,
+			// titleImage:'images/nav_icon_31f.png',
 			subject: e.rowData.title,
 			id: e.rowData.id
 		});
@@ -171,3 +177,9 @@ tableView.addEventListener('click', function(e)
 });
 
 win.add(tableView);
+
+Titanium.UI.currentWindow.addEventListener('open',function() 
+{ 
+	Ti.API.info("in on open event inside")
+	e.source.open();
+});

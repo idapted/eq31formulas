@@ -9,18 +9,17 @@
 	Titanium.API.info('JS TIME:' + currentTime);
 	// lesson = db.execute('SELECT * FROM LESSONS ORDER BY ID LIMIT 1')
 	
-	lessons = db.execute('SELECT * FROM LESSONS');
-	
 	if (Titanium.Network.online == true)
 	{
 		Titanium.API.info('Online--update lessons!');
-		var src = 'http://www.veecue.com/eq31formulas/data_service/lessons';
+		var src = 'http://www.eqenglish.com/eq31formulas/data_service/lessons';
 		c = Titanium.Network.createHTTPClient();
 
 		c.onload = function()
 		{	
 			var json_data = JSON.parse(this.responseText);
-			
+			lessons = db.execute('SELECT * FROM LESSONS');
+				
 			Titanium.API.info('lesson JSON count:' + json_data.length);
 			Titanium.API.info('lessons DB count:' + lessons.rowCount);
 			
@@ -37,8 +36,9 @@
 					db.execute("INSERT INTO LESSONS (ID, TITLE, AIMS, ANSWER_ORDER, LANG_STEP, MODEL_ANSWER) VALUES(?,?,?,?,?,?)", record.id, record.title, record.aims, record.answer_order, record.lang_step, record.model_answer);	
 				}
 			}
+			lessons.close();
 		};
- 
+
 		// open the client
 		c.open('GET', src);
 		
@@ -47,16 +47,16 @@
 		
 		// Update tips..
 		Titanium.API.info('Online--update Tips!');
-		src = 'http://www.veecue.com/eq31formulas/data_service/tips';
+		tips_src = 'http://www.eqenglish.com/eq31formulas/data_service/tips';
 		c_tips = Titanium.Network.createHTTPClient();
 
 		c_tips.onload = function()
 		{	
 			var json_tips = JSON.parse(this.responseText);
+			tips = db.execute('SELECT * FROM TIPS');
 			
 			Titanium.API.info('tips JSON count:' + json_tips.length);
 			Titanium.API.info('tips DB count:' + tips.rowCount);
-			tips = db.execute('SELECT * FROM TIPS');
 			
 			if (tips.rowCount < json_tips.length)
 			{
@@ -70,11 +70,12 @@
 					// add different control for UPDATE or INSERTION here
 					db.execute("INSERT INTO TIPS (ID, TITLE, CATEGORY, DETAIL, SOUND_NAME) VALUES(?,?,?,?,?)", record.id, record.title, record.category, record.detail, record.sound_name);	
 				}	
-			}			
+			}
+			tips.close();			
 		};
  
 		// open the client
-		c_tips.open('GET', src);
+		c_tips.open('GET', tips_src);
 		
 		// send the data
 		c_tips.send();

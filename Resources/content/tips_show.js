@@ -34,6 +34,7 @@ for(var i=0; i<rows.rowCount; i++){
 		url:"../sound/" + rows.field(4)
 	});
 	
+	Ti.API.info("A---" + rows.field(4));
 	sounds[i] = sound;
 	
 	if (win.type == 'do'){
@@ -57,7 +58,7 @@ for(var i=0; i<rows.rowCount; i++){
 
 	play.addEventListener('click', function(e)
 	{	
-		Titanium.API.info('SOUNDS = ' + e.source.index + ":" + sounds[e.source.index].url );
+		Titanium.API.info('SOUNDS = ' + e.source.index );
 		if (sounds[e.source.index].isPlaying()){
 			sounds[e.source.index].pause();
 			e.source.backgroundImage = '../images/sound_play.png';
@@ -96,7 +97,7 @@ scrollView.addEventListener('scroll', function(e)
     activeView = e.view;  // the object handle to the view that is about to become visible
 	Titanium.API.info("scroll called - current index " + e.currentPage + ' active view ' + activeView);
 	
-	if (sounds[e.currentPage-1].isPlaying())
+	if (e.currentPage > 0 && sounds[e.currentPage-1].isPlaying())
 	{
 		sounds[e.currentPage-1].pause();
 	}

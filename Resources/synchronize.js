@@ -6,7 +6,7 @@
 	var day = currentTime.getDate();
 	var year = currentTime.getFullYear();
 	
-	Titanium.API.info('JS TIME:' + currentTime);
+	Ti.API.info('JS TIME:' + currentTime);
 	// lesson = db.execute('SELECT * FROM LESSONS ORDER BY ID LIMIT 1')
 	
 	if (Titanium.Network.online == true)
@@ -33,7 +33,7 @@
 					Titanium.API.info("updating lesson:" + i);
 					var record = json_data[i].lesson;
 					// add different control for UPDATE or INSERTION here
-					db.execute("INSERT INTO LESSONS (ID, TITLE, AIMS, ANSWER_ORDER, LANG_STEP, MODEL_ANSWER) VALUES(?,?,?,?,?,?)", record.id, record.title, record.aims, record.answer_order, record.lang_step, record.model_answer);	
+					db.execute("INSERT INTO LESSONS (ID, TITLE, SOUND_NAME, AIMS, ANSWER_ORDER, LANG_STEP, MODEL_ANSWER) VALUES(?,?,?,?,?,?,?)", record.id, record.title, record.sound_name, record.aims, record.answer_order, record.lang_step, record.model_answer);	
 				}
 			}
 			lessons.close();

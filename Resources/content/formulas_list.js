@@ -178,8 +178,8 @@ tableView.addEventListener('click', function(e)
 
 win.add(tableView);
 
-Titanium.UI.currentWindow.addEventListener('open',function() 
+Titanium.UI.currentWindow.addEventListener('open',function(e) 
 { 
-	Ti.API.info("in on open event inside")
+	Ti.API.info("in on open event inside");
 	e.source.open();
 });

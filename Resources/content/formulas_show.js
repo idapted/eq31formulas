@@ -14,36 +14,36 @@ else
 var row = db.execute('SELECT * FROM lessons WHERE id =?', win.id);
 
 var views = [];
-for(var i=2; i<6; i++){
+for(var i=3; i<7; i++){
 	var fView = Ti.UI.createWebView();
 
 	fView.html = '<html><head><link rel="stylesheet" type="text/css" href="../css/formula.css" /></head><body>' + row.field(i) + '</body></html>';
 	
-	if(i == 5){
+	if(i == 6 && row.field(2)){
 		var play = Titanium.UI.createButton({
 			height:30,
 			width:135,
 			right:20,
 			bottom:15,
-			backgroundImage:'../images/video_play.png'
+			backgroundImage:'../images/video_play.png',
+			s_url: row.field(2)
 		});
 		
 		fView.add(play);
 		
-		play.addEventListener('click', function()
+		play.addEventListener('click', function(e)
 		{
 			var activeMovie = Titanium.Media.createVideoPlayer({
-				contentURL:'../animation/1.mp4', //'../animation/' + row.field(2)
+				url: '../animation/' + e.source.s_url,
 				backgroundColor:'#111',
-				movieControlMode:Titanium.Media.VIDEO_CONTROL_DEFAULT,
-				scalingMode:Titanium.Media.VIDEO_SCALING_MODE_FILL
+				mediaControlStyle:Titanium.Media.VIDEO_CONTROL_DEFAULT,
+				scalingMode:Titanium.Media.VIDEO_SCALING_MODE_FILL,
+				fullscreen: true
 			});
-
+			
 			if (parseFloat(Titanium.Platform.version) >= 3.2)
 			{
-				activeMovie.movieControlStyle = Titanium.Media.VIDEO_CONTROL_EMBEDDED;
-			//	activeMovie.movieControlStyle = Titanium.Media.VIDEO_CONTROL_FULLSCREEN;
-			//	activeMovie.movieControlStyle = Titanium.Media.VIDEO_CONTROL_NONE;
+				activeMovie.mediaControlStyle = Titanium.Media.VIDEO_CONTROL_EMBEDDED;
 				if (Titanium.Platform.osname == "ipad") {
 					activeMovie.width = 400;
 					activeMovie.height = 300;
@@ -63,9 +63,9 @@ for(var i=2; i<6; i++){
 				});
 			});
 
-			activeMovie.addEventListener('complete',function()
+			activeMovie.addEventListener('complete',function(e)
 			{
-				activeMoive.close();
+				e.source.stop();
 			});
 		});
 	}

@@ -79,6 +79,7 @@ for(var i=0; i<rows.rowCount; i++){
 	rows.next();
 }
 rows.close();
+db.close();
 
 var scrollView = Titanium.UI.createScrollableView({
 	views:views,

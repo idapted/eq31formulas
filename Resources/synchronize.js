@@ -1,5 +1,5 @@
 (function(){
-	var db = Titanium.Database.open('eq31formulas');
+	//var db = Titanium.Database.open('eq31formulas');
 	
 	var currentTime = new Date();
 	var month = currentTime.getMonth() + 1;
@@ -7,7 +7,6 @@
 	var year = currentTime.getFullYear();
 	
 	Ti.API.info('JS TIME:' + currentTime);
-	// lesson = db.execute('SELECT * FROM LESSONS ORDER BY ID LIMIT 1')
 	
 	if (Titanium.Network.online == true)
 	{
@@ -84,6 +83,6 @@
 	{
 		Titanium.API.info('Offline--');
 		return;
-	}  	
+	} 	
 })();
 

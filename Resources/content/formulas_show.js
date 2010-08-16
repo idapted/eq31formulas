@@ -74,6 +74,7 @@ for(var i=3; i<7; i++){
 
 // close db after getting data
 row.close();
+db.close();
 
 var scrollView = Titanium.UI.createScrollableView({
 	views:views,

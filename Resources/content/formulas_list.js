@@ -146,6 +146,7 @@ for (var c=0;c<rows.rowCount;c++)
 }
 
 rows.close();
+db.close();
 
 //
 // create table view (

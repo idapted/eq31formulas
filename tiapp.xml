@@ -3,10 +3,10 @@
 <id>com.idapted.eq31formulas</id>
 <name>EQ31Formulas</name>
 <version>1.0</version>
-<publisher>AndyWang</publisher>
-<url>not specified</url>
-<description>not specified</description>
-<copyright>idapted.com</copyright>
+<publisher>lijiapeng</publisher>
+<url>www.idapted.com</url>
+<description>No description provided</description>
+<copyright>2010 by lijiapeng</copyright>
 <icon>appicon.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>

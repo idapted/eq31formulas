@@ -8,4 +8,5 @@ eq_31_formulas=EQ 31 Formulas
 tips=EQ Tips
 language=Language
 intro=Introduction
-formula=Formula 
+formula=Formula
+img_fix=en 

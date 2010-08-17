@@ -22,7 +22,7 @@ intro.addEventListener('click', function(e)
 	// window container
 	var introWindow = Titanium.UI.createWindow({
 		fullcreen:true,
-		backgroundImage:'../images/tips_intro.png'
+		backgroundImage:'../images/' + _("img_fix") + '_tips_intro.png'
 	});
 	
 	introWindow.open({

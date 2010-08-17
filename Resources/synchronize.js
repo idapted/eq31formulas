@@ -70,7 +70,7 @@
 					db.execute("INSERT INTO TIPS (ID, TITLE, CATEGORY, DETAIL, SOUND_NAME) VALUES(?,?,?,?,?)", record.id, record.title, record.category, record.detail, record.sound_name);	
 				}	
 			}
-			tips.close();			
+			tips.close();		
 		};
  
 		// open the client
@@ -83,6 +83,7 @@
 	{
 		Titanium.API.info('Offline--');
 		return;
-	} 	
+	}
+	setTimeout(function(){db.close();},3000);	
 })();
 

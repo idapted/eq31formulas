@@ -9,3 +9,4 @@ tips=EQ Tips
 language=Language
 intro=Introduction
 formula=Formula 
+img_fix=en

@@ -9,3 +9,4 @@ tips=EQ语言技巧
 language=语言
 intro=简介
 formula=公式 
+img_fix=zh

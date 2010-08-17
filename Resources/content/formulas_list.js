@@ -27,7 +27,7 @@ intro.addEventListener('click', function(e)
 	// window container
 	var introWindow = Titanium.UI.createWindow({
 		fullcreen:true,
-		backgroundImage:'../images/f_part1_intro.png'
+		backgroundImage:'../images/' + _('img_fix') + '_f_part1_intro.png'
 	});
 	
 	introWindow.open({
@@ -179,8 +179,8 @@ tableView.addEventListener('click', function(e)
 
 win.add(tableView);
 
-Titanium.UI.currentWindow.addEventListener('open',function(e) 
-{ 
-	Ti.API.info("in on open event inside");
-	e.source.open();
-});
+// Titanium.UI.currentWindow.addEventListener('open',function(e) 
+// { 
+// 	Ti.API.info("in on open event inside");
+// 	e.source.open();
+// });

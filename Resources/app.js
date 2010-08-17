@@ -17,5 +17,3 @@ Ti.include("init_layout.js");
 
 // add top level introduction of 31 formulas
 Ti.include("introduction.js");
-
-db.close();

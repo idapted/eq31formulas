@@ -9,4 +9,6 @@ tips=EQ Tips
 language=Language
 intro=Introduction
 formula=Formula
-img_fix=en 
+loading_message=Touch Screen To Start
+loading=Loading...
+img_fix=en

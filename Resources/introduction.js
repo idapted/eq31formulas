@@ -8,7 +8,7 @@
 	var welcomeWindow = Titanium.UI.createWindow();
     welcomeWindow.fullscreen = true;
     
-	var f = Ti.Filesystem.getFile(Titanium.Filesystem.resourcesDirectory,'images/splash.png');
+	var f = Ti.Filesystem.getFile(Titanium.Filesystem.resourcesDirectory,('images/' + _('img_fix') + '_splash.png'));
 
 	var imageView = Titanium.UI.createImageView({
 		image:f
@@ -24,7 +24,7 @@
 	welcomeWindow.add(actInd);
 	
 	var start = Titanium.UI.createLabel({
-		text:'Touch screen to start...',
+		text: _('loading_message'),
 		font:{fontSize:20,fontWeight:'bold', fontFamily:'Helvetica'},
 		color:'#fff',
 		textAlign:'center',
@@ -44,7 +44,7 @@
 		actInd.style = Titanium.UI.iPhone.ActivityIndicatorStyle.PLAIN;
 		actInd.font = {fontFamily:'Helvetica Neue', fontSize:15,fontWeight:'bold'};
 		actInd.color = 'white';
-		actInd.message = 'Loading...';
+		actInd.message = _('loading');
 		actInd.width = 210;
 		actInd.show();
 		setTimeout(function()

@@ -9,4 +9,6 @@ tips=EQ语言技巧
 language=語言
 intro=簡介
 formula=公式 
+loading_message=觸摸屏幕開始
+loading=Loading...
 img_fix=zh

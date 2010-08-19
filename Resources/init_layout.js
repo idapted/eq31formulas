@@ -8,12 +8,15 @@ var tabGroup = Titanium.UI.createTabGroup();
 //
 Ti.include('content/tab_tips.js');
 
-//
-// create tab for weibo
-//
-Ti.include('content/tab_weibo.js');
-
 Ti.include('content/tab_formulas.js');
+
+if (L10N.UserLanguage == 'zh-cn' || L10N.UserLanguage == 'zh-tw')
+{
+	//
+	// create tab for weibo
+	//
+	Ti.include('content/tab_weibo.js');
+}
 
 // create tab for lang settings
 var win_setting = Ti.UI.createWindow({
@@ -75,7 +78,10 @@ win_setting.add(tableview);
 //
 tabGroup.addTab(tab_formulas);  
 tabGroup.addTab(tab_tips);  
-tabGroup.addTab(tab_weibo);
+if (L10N.UserLanguage == 'zh-cn' || L10N.UserLanguage == 'zh-tw')
+{
+	tabGroup.addTab(tab_weibo);
+}
 tabGroup.addTab(tab_setting);  
 
 var omodes = [
@@ -86,7 +92,6 @@ var omodes = [
 ];
 
 win_tips.orientationModes = omodes;
-win_weibo.orientationModes = omodes;
 
 Titanium.Analytics.featureEvent('app.feature.blah',{product:'killer'});
 

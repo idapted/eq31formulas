@@ -3,6 +3,9 @@ Ti.include('l10n/l10n.js');
 Ti.include('l10n/l10n_dialog.js');
 Ti.include('l10n/l10n_format.js');
 
+Ti.API.info("platform default lang: " + Titanium.Platform.locale)
+Ti.API.info("multi lang setting: " + L10N.UserLanguage)
+
 // Create table for first time users.
 var db = Titanium.Database.install('31formulas.db', 'eq31formulas');
 db.execute('CREATE TABLE IF NOT EXISTS LESSONS (ID INTEGER, TITLE TEXT, SOUND_NAME TEXT,AIMS TEXT, ANSWER_ORDER TEXT, LANG_STEP TEXT, MODEL_ANSWER TEXT)');

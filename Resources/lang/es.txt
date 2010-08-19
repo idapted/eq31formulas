@@ -1,12 +1,12 @@
 [L10N]
-tab_formulas=puntuación más alta
-tab_tips=Consejos
+tab_formulas=Las Fórmulas
+tab_tips=Pistas
 tab_weibo=microblogging
-tab_others=Más información
-tab_settings=Establece
-eq_31_formulas=EQ 31 Formulas
-tips=EQ Tips
-language=Language
-intro=Introduction
-formula=Formula 
-img_fix=en
+tab_others=Otros
+tab_settings=Configuraciones
+eq_31_formulas=Las 31 Formulas EQ!
+tips=Pistas
+language=Idiomas
+intro=Introducción
+formula=Fórmula 
+img_fix=es

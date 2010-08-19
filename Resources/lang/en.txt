@@ -2,7 +2,7 @@
 tab_formulas=FORMULAS
 tab_tips=TIPS
 tab_weibo=SINA WEIBO
-tab_others=Others
+tab_others=OTHER
 tab_settings=SETTING
 eq_31_formulas=EQ 31 Formulas
 tips=EQ Tips

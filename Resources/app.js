@@ -3,8 +3,8 @@ Ti.include('l10n/l10n.js');
 Ti.include('l10n/l10n_dialog.js');
 Ti.include('l10n/l10n_format.js');
 
-Ti.API.info("platform default lang: " + Titanium.Platform.locale)
-Ti.API.info("multi lang setting: " + L10N.UserLanguage)
+Ti.API.info("platform default lang: " + Titanium.Platform.locale);
+Ti.API.info("multi lang setting: " + L10N.UserLanguage);
 
 // Create table for first time users.
 var db = Titanium.Database.install('31formulas.db', 'eq31formulas');

@@ -14,7 +14,7 @@ function L10NObject() {
   this.LangPreferenceName = 'lang'; // change if you want to store language preference in some other variable
   this.LangUrlPreferenceName = 'lang-url'; // change if you want to store language URL preference in some other variable
   this.LangDir = 'lang'; // change if you want to store language files in some other directory
-  this.DefaultLanguage = Titanium.Platform.locale //'en'; // change if you want to have another default language
+  this.DefaultLanguage = Titanium.Platform.locale; //'en'; // change if you want to have another default language
 
   this.FileSignature = /^\[L10N\]/;
   this.LanguageFiles = {};

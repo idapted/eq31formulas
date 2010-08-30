@@ -12,3 +12,4 @@ formula=Formula
 loading_message=Touch Screen To Start
 loading=Loading...
 img_fix=en
+animation_pre=http://www.idapted.com/resources/iapp/31formulas/

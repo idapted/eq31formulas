@@ -12,3 +12,4 @@ formula=公式
 loading_message=触摸屏幕开始
 loading=Loading...
 img_fix=zh
+animation_pre=http://www.eqenglish.com/resources/iapp/31formulas/

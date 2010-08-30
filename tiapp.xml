@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
 <id>com.idapted.eq31formulas</id>
-<name>31_IELTS_Formulas_to_Answer_Every_Question</name>
+<name>IELTSFormulas</name>
 <version>1.0.0</version>
 <publisher>Idapted Ltd.</publisher>
 <url>http://www.idapted.com</url>
 <description>Based on the best selling book and years of scientific analysis, these 31 Formulas tell you everything you need to know to answer ANY IELTS Speaking question!</description>
 <copyright>2010 by Idapted Ltd.</copyright>
-<icon>appcion.png</icon>
+<icon>default_app_logo.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
     <statusbar-style>default</statusbar-style>

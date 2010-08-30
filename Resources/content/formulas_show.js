@@ -1,3 +1,7 @@
+Ti.include('../l10n/l10n.js');
+Ti.include('../l10n/l10n_dialog.js');
+Ti.include('../l10n/l10n_format.js');
+
 var db = Titanium.Database.open('eq31formulas');
 var win = Titanium.UI.currentWindow;
 win.barColor = '#385292';
@@ -33,8 +37,17 @@ for(var i=3; i<7; i++){
 		
 		play.addEventListener('click', function(e)
 		{
+			var omodes = [
+				Titanium.UI.PORTRAIT,
+				Titanium.UI.UPSIDE_PORTRAIT,
+				Titanium.UI.LANDSCAPE_LEFT,
+				Titanium.UI.LANDSCAPE_RIGHT
+			];
+
+			win.orientationModes = omodes;
+			
 			var activeMovie = Titanium.Media.createVideoPlayer({
-				url: '../animation/' + e.source.s_url,
+				url: _('animation_pre') + e.source.s_url,
 				backgroundColor:'#111',
 				mediaControlStyle:Titanium.Media.VIDEO_CONTROL_DEFAULT,
 				scalingMode:Titanium.Media.VIDEO_SCALING_MODE_FILL,

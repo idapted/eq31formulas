@@ -98,9 +98,9 @@ for (var c=0;c<rows.rowCount;c++)
 	
 	var formula = Ti.UI.createLabel({
 		color:'#222981',
-		font:{fontSize:25,fontWeight:'bold', fontFamily:'Helvetica'},
+		font:{fontSize:27,fontWeight:'bold', fontFamily:'Helvetica'},
 		left:15,
-		top:24,
+		top:30,
 		height:30,
 		width:50,
 		innerShadowColor:'#000',

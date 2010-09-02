@@ -5,15 +5,10 @@
 (function()
 {	
 	// window container
-	var welcomeWindow = Titanium.UI.createWindow();
-    welcomeWindow.fullscreen = true;
-    
-	var f = Ti.Filesystem.getFile(Titanium.Filesystem.resourcesDirectory,('images/' + _('img_fix') + '_splash.png'));
-
-	var imageView = Titanium.UI.createImageView({
-		image:f
+	var welcomeWindow = Titanium.UI.createWindow({
+		fullcreen:true,
+		backgroundImage:'images/' + _('img_fix') + '_splash.png'
 	});
-	welcomeWindow.add(imageView);
 	
 	var actInd = Titanium.UI.createActivityIndicator({
 		bottom:100, 
